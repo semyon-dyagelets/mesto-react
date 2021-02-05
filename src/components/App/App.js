@@ -50,21 +50,54 @@ function App() {
         <Footer />
 
         <PopupWithForm title="Редактировать профиль" name="edit" isOpen={isEditProfilePopupOpen} onClose={closeAllPopups}>
-          <input className="popup__input popup__input_edit_name" id="name-input" name="name" type="text" minLength="2" maxLength="40" required />
+          <input 
+          className="popup__input popup__input_edit_name" 
+          id="name-input" 
+          name="name" 
+          type="text" 
+          minLength="2" 
+          maxLength="40" 
+          required />
           <span className="popup__input-error" id="name-input-error"></span>
-          <input className="popup__input popup__input_edit_description" id="description-input" name="about" type="text" minLength="2" maxLength="200" required />
+          <input 
+          className="popup__input popup__input_edit_description" 
+          id="description-input" 
+          name="about" 
+          type="text" 
+          minLength="2" 
+          maxLength="200" 
+          required />
           <span className="popup__input-error" id="description-input-error"></span>
         </PopupWithForm>
 
         <PopupWithForm title="Обновить аватар" name="edit-avatar" isOpen={isEditAvatarPopupOpen} onClose={closeAllPopups}>
-          <input className="popup__input popup__input_edit_name" id="avatar-link-input" name="avatar" type="url" placeholder="Ссылка на картинку" required />
+          <input 
+          className="popup__input popup__input_edit_name" 
+          id="avatar-link-input" 
+          name="avatar" 
+          type="url" 
+          placeholder="Ссылка на картинку" 
+          required />
           <span className="popup__input-error" id="avatar-link-input-error"></span>
         </PopupWithForm>
 
         <PopupWithForm title="Новое место" name="add-card" isOpen={isAddPlacePopupOpen} onClose={closeAllPopups}>
-          <input className="popup__input popup__input_edit_name" id="place-name-input" name="name" type="text"  minLength="2" maxLength="30" placeholder="Название" required />
+          <input 
+          className="popup__input popup__input_edit_name" 
+          id="place-name-input" 
+          name="name" 
+          type="text"  
+          minLength="2" 
+          maxLength="30" 
+          placeholder="Название" required />
           <span className="popup__input-error" id="place-name-input-error"></span>
-          <input className="popup__input popup__input_edit_description" id="place-link-input" name="link" type="url" placeholder="Ссылка на картинку" required />
+          <input 
+          className="popup__input popup__input_edit_description" 
+          id="place-link-input" 
+          name="link" 
+          type="url" 
+          placeholder="Ссылка на картинку" 
+          required />
           <span className="popup__input-error" id="place-link-input-error"></span>
         </PopupWithForm>
 

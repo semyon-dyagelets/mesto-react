@@ -5,8 +5,8 @@ import Card from '../Card/Card.js';
 
 function Main(props) {
 
-    const [userName, setUserName] = React.useState("FFF");
-    const [userDescription, setUserDescription] = React.useState("255, 255, 255")
+    const [userName, setUserName] = React.useState("");
+    const [userDescription, setUserDescription] = React.useState("")
     const [userAvatar, setUserAvatar] = React.useState({ profileAvatar });
     const [cards, setCards] = React.useState([]);
 
@@ -38,37 +38,41 @@ function Main(props) {
                 <section className="profile">
                     <div className="profile__container">
                         <div className="profile__avatar-container">
-                            <img className="profile__avatar" src={userAvatar} alt="аватар" />
+                            <img
+                                className="profile__avatar"
+                                src={userAvatar}
+                                alt="аватар" />
                             <button
                                 className="profile__edit-button profile__edit-avatar-button"
                                 type="button"
                                 aria-label="редактировать-аватар"
-                                onClick={props.onEditProfile}></button>
+                                onClick={props.onEditProfile} />
                         </div>
                         <div className="profile__info">
                             <div className="profile__description">
                                 <h1 className="profile__name">{userName}</h1>
                                 <p className="profile__profession">{userDescription}</p>
                             </div>
-                            <button className="profile__edit-button profile__edit-description-button"
+                            <button
+                                className="profile__edit-button profile__edit-description-button"
                                 type="button"
                                 aria-label="редактировать-профиль"
-                                onClick={props.onEditProfile}>
-                            </button>
+                                onClick={props.onEditProfile} />
                         </div>
                     </div>
-                    <button className="profile__add-button"
+                    <button
+                        className="profile__add-button"
                         type="button"
                         aria-label="добавить-фото"
-                        onClick={props.onAddPlace}>
-                    </button>
+                        onClick={props.onAddPlace} />
                 </section>
 
                 <section className="elements" aria-label="Фотографии">
                     {cards.map((card) => <Card
                         key={card._id}
                         card={card}
-                        onCardClick={props.onCardClick} />)}
+                        onCardClick={props.onCardClick} />
+                    )}
                 </section>
 
             </main>
