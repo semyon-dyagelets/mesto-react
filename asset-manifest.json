@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/static/css/main.c5106964.chunk.css",
+    "main.js": "/static/js/main.f13f9035.chunk.js",
+    "main.js.map": "/static/js/main.f13f9035.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.c133ca46.js",
+    "runtime-main.js.map": "/static/js/runtime-main.c133ca46.js.map",
+    "static/js/2.3678423a.chunk.js": "/static/js/2.3678423a.chunk.js",
+    "static/js/2.3678423a.chunk.js.map": "/static/js/2.3678423a.chunk.js.map",
+    "static/js/3.deff9e5c.chunk.js": "/static/js/3.deff9e5c.chunk.js",
+    "static/js/3.deff9e5c.chunk.js.map": "/static/js/3.deff9e5c.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.c5106964.chunk.css.map": "/static/css/main.c5106964.chunk.css.map",
+    "static/js/2.3678423a.chunk.js.LICENSE.txt": "/static/js/2.3678423a.chunk.js.LICENSE.txt",
+    "static/media/index.css": "/static/media/icon-trash.cbc09a89.svg",
+    "static/media/logo-white.ff5e7d02.svg": "/static/media/logo-white.ff5e7d02.svg",
+    "static/media/photo-kusto.3705a65f.jpg": "/static/media/photo-kusto.3705a65f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c133ca46.js",
+    "static/js/2.3678423a.chunk.js",
+    "static/css/main.c5106964.chunk.css",
+    "static/js/main.f13f9035.chunk.js"
+  ]
+}
