@@ -1,5 +1,7 @@
 {
   "name": "mesto-react",
+  "author": "Semyon Dyagelets",
+  "description": "react-app for adding photos",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
