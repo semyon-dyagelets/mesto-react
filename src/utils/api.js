@@ -32,7 +32,6 @@ class API {
     }
 
     editProfile(data) {
-        console.log(data);
         return fetch(`${this._baseURL}/users/me`, {
             method: 'PATCH',
             headers: {
@@ -76,8 +75,8 @@ class API {
             .then(this._checkResponse)
     }
 
-    deleteCard(id) {
-        return fetch(`${this._baseURL}/cards/${id}`, {
+    deleteCard(_id) {
+        return fetch(`${this._baseURL}/cards/${_id}`, {
             method: 'DELETE',
             headers: {
                 authorization: this._token,
@@ -86,8 +85,8 @@ class API {
             .then(this._checkResponse)
     }
 
-    putLike(id) {
-        return fetch(`${this._baseURL}/cards/likes/${id}`, {
+    putLike(_id) {
+        return fetch(`${this._baseURL}/cards/likes/${_id}`, {
             method: 'PUT',
             headers: {
                 authorization: this._token,
@@ -96,8 +95,8 @@ class API {
             .then(this._checkResponse)
     }
 
-    deleteLike(id) {
-        return fetch(`${this._baseURL}/cards/likes/${id}`, {
+    deleteLike(_id) {
+        return fetch(`${this._baseURL}/cards/likes/${_id}`, {
             method: 'DELETE',
             headers: {
                 authorization: this._token,
