@@ -18,7 +18,7 @@ function EditProfilePopup(props) {
     setName(evt.target.value);
   }
 
-  function handleDesriptionChange(evt) {
+  function handleDesсriptionChange(evt) {
     setDescription(evt.target.value);
   }
 
@@ -60,7 +60,7 @@ function EditProfilePopup(props) {
         name="about"
         type="text"
         value={description || ""}
-        onChange={handleDesriptionChange}
+        onChange={handleDesсriptionChange}
         minLength="2"
         maxLength="200"
         required

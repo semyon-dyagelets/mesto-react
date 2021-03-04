@@ -1,0 +1,12 @@
+.authorization__link {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.authorization__link:visited {
+    color:#FFFFFF;
+}
+
+.authorization__link:hover {
+    opacity: .6
+}
